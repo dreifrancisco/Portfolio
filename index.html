@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="top-bar">
+      <div class="name-role">
+        <span class="name">⚫ John Andrei S. Francisco</span>
+        <span class="role">IT Support</span>
+      </div>
+      <nav>
+        <a href="index.html" class="active">Home</a>
+        <a href="resume.html">Resume</a>
+        <a href="skills.html">Skills</a>
+        <a href="personal.html">Personal</a>
+      </nav>
+    </div>
+  </header>
+
+
+  <main class="container">
+    <div class="profile-card">
+      <img src="dreiyi.png" alt="Dalya Baron" class="profile-img">
+      <div class="info">
+        <h1>John Andrei</h1>
+        <h2>About Me</h2>
+        <p>
+            I am a graduate student at Bulacan Agricultural State College (BASC), class of 2025, pursuing a degree in Information Technology. 
+            I have a strong passion for UI/UX design, and I genuinely enjoy crafting user interfaces that are both visually appealing and intuitive. 
+            What truly drives me is seeing how people interact with and appreciate my work—it motivates me to keep learning and improving. 
+            I believe that great design is not just about how it looks, but how it works and feels, and I strive to create digital experiences that leave a lasting impression.
+        </p>
+        <div class="button-group">
+          <a href="resume.html" class="btn green">Resume</a>
+          <a href="skills.html" class="btn orange">Skills</a>
+          <!-- <a href="#" class="btn blue">Outreach</a> -->
+          <a href="personal.html" class="btn blue">Personal</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+<footer>
+  <div class="footer-content">
+    <div class="footer-links">
+      <div>
+        <strong>Email</strong><br>
+        andreifrancsico.basc@gmail.com
+      </div>
+      <div>
+        <strong>GitHub</strong><br>
+        <a href="https://github.com/dreifrancisco" target="_blank">https://github.com/dreifrancisco</a>
+      </div>
+    </div>
+    <p class="credits">© 2025 by John Andrei S. Francisco</p>
+  </div>
+</footer>
+
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const profileCard = document.querySelector(".profile-card");
+    if (profileCard) {
+      profileCard.style.opacity = "1"; // Trigger fade-slide animation
+    }
+  });
+</script>
+
+</body>
+</html>

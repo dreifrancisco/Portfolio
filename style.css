@@ -1,0 +1,417 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+.top-bar {
+  background: #fff;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  flex-wrap: wrap;
+}
+
+.name-role {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.name {
+  font-weight: bold;
+  font-size: 1.2em;
+  white-space: nowrap;
+}
+
+.role {
+  font-size: 1em;
+  color: #888;
+  white-space: nowrap;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #444;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #0077cc;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.profile-card {
+  display: flex;
+  max-width: 900px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  margin-top: 33px;
+}
+
+.profile-img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 30px;
+  border: 4px solid #eaeaea;
+}
+
+.info {
+  max-width: 600px;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.2em;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+p {
+  line-height: 1.6;
+}
+
+.button-group {
+  margin-top: 20px;
+}
+
+.btn {
+  padding: 10px 20px;
+  margin-right: 10px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  display: inline-block;
+  transition: background 0.3s ease;
+}
+
+.green { background-color: #8bc34a; }
+.orange { background-color: #ff9800; }
+.blue { background-color: #00bcd4; }
+.gray { background-color: #9e9e9e; }
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+footer {
+  background: #fff;
+  padding: 35px 20px 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #333;
+  border-top: 1px solid #eee;
+  margin-top: 100px;
+}
+
+.footer-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.footer-links div {
+  margin: 10px 20px;
+  min-width: 200px;
+  line-height: 1.5;
+}
+
+.footer-links a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.credits {
+  font-size: 12px;
+  color: #999;
+}
+
+@keyframes fadeSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+    .profile-card {
+    opacity: 0;
+    animation: fadeSlideIn 1s ease forwards;
+    }
+
+    /* Optional nav hover style */
+    nav a {
+    transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+    color: #0077cc;
+    }
+
+    /* Optional active link style */
+    nav a.active {
+    color: #ff9800;
+    font-weight: bold;
+    }
+
+
+/* This is the design for resume page */
+
+    .resume-container {
+      max-width: 900px;
+      margin: 60px auto;
+      background: #fff;
+      border-radius: 15px;
+      padding: 40px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+      text-align: center;
+    }
+
+    .resume-title {
+      font-size: 1.8rem;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .resume-preview {
+      width: 100%;
+      max-width: 600px;
+      border-radius: 10px;
+      margin-bottom: 30px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+    }
+
+    .download-btn {
+      display: inline-block;
+      padding: 12px 24px;
+      background-color: #00bcd4;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 25px;
+      transition: background 0.3s ease;
+    }
+
+    .download-btn:hover {
+      background-color: #0097a7;
+    }
+
+    @keyframes fadeSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    }
+
+    .resume-container {
+    opacity: 0;
+    animation: fadeSlideIn 1s ease forwards;
+    animation-delay: 0.1s;
+    }
+
+    /* Optional smoother nav links */
+    nav a {
+    transition: color 0.3s ease;
+    }
+    nav a:hover {
+    color: #ff9800;
+    }
+    nav a.active {
+    color: #ff9800;
+    font-weight: bold;
+    }
+
+
+    /*This design is for PERSONAL PAGE */
+
+    .personal-container {
+      max-width: 800px;
+      margin: 60px auto;
+      background: #fff;
+      border-radius: 15px;
+      padding: 40px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+    }
+
+    .personal-header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .personal-header h2 {
+      font-size: 1.8rem;
+      margin-bottom: 8px;
+    }
+
+    .bio-list {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      row-gap: 15px;
+      column-gap: 30px;
+      font-size: 1rem;
+      color: #444;
+    }
+
+    .bio-label {
+      font-weight: bold;
+      color: #222;
+    }
+
+    .download-btn {
+      margin-top: 30px;
+      display: inline-block;
+      padding: 12px 24px;
+      background-color: #ff9800;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 25px;
+      transition: background 0.3s ease;
+    }
+
+    .download-btn:hover {
+      background-color: #f57c00;
+    }
+
+    @media (max-width: 600px) {
+      .bio-list {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    nav a.active {
+        color: #ff9800;
+        font-weight: bold;
+    }
+
+
+/* Animation on personal page load */
+    @keyframes fadeSlideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    }
+
+    .personal-container {
+    animation: fadeSlideIn 0.5s ease forwards;
+    opacity: 0;
+    }
+
+    /* Optional: slight hover effect on nav links for feel */
+    nav a {
+    position: relative;
+    padding: 5px 8px;
+    transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+    color: #0077cc;
+    }
+
+    /* This Design is for the Skills Page */
+
+        .skills-container {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+      animation: fadeSlideIn 0.8s ease forwards;
+    }
+
+    .skills-section {
+      margin-bottom: 30px;
+    }
+
+    .skills-section h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+      border-bottom: 2px solid #3f51b5;
+      padding-bottom: 5px;
+    }
+
+    .skill {
+      margin-bottom: 15px;
+    }
+
+    .skill-label {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .skill-bar {
+      background: #eee;
+      border-radius: 10px;
+      overflow: hidden;
+      height: 20px;
+    }
+
+    .skill-bar-fill {
+      height: 100%;
+      color: white;
+      text-align: right;
+      padding-right: 10px;
+      line-height: 20px;
+      font-size: 13px;
+      border-radius: 10px;
+      animation: growBar 1.5s ease forwards;
+    }
+
+    .front-end .skill-bar-fill { background: #2196f3; }
+    .back-end .skill-bar-fill { background: #4caf50; }
+    .tools .skill-bar-fill { background: #ff9800; }
+
+    @keyframes fadeSlideIn {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes growBar {
+      from { width: 0; }
+    }
